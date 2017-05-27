@@ -1,0 +1,40 @@
+{
+  "name": "waste-some-guids-ui",
+  "version": "1.0.0",
+  "description": "A simple React.js application that converts strings to different cases using Lodash.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "npm run build && webpack-dev-server",
+    "test": "eslint --ignore-path .gitignore ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neverendingqs/waste-some-guids-ui"
+  },
+  "keywords": [
+    "react.js",
+    "bootstrap"
+  ],
+  "author": "neverendingqs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neverendingqs/waste-some-guids-ui/issues"
+  },
+  "homepage": "https://github.com/neverendingqs/waste-some-guids-ui#readme",
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-react": "^6.16.0",
+    "eslint": "^3.8.1",
+    "eslint-plugin-react": "^6.4.1",
+    "html-webpack-plugin": "^2.24.0",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.1"
+  }
+}
