@@ -1,12 +1,15 @@
 <template>
   <div id="app" class="container">
     <h1>Waste Some GUIDs</h1>
-    <div class="form-inline justify-content-center">
-      <NumGuids @change="generateMoreGuids" />
-      <button
-        class="btn btn-info"
-        v-clipboard:copy="allGuids"
-      >Copy All</button>
+    <hr />
+    <div class="mb-1">
+      <div class="form-inline justify-content-center">
+        <NumGuids @change="generateMoreGuids" />
+        <button
+          class="btn btn-info"
+          v-clipboard:copy="allGuids"
+        >Copy All</button>
+      </div>
     </div>
     <Guid v-for="guid in guids" :key="guid" :guid="guid" />
   </div>
@@ -50,8 +53,5 @@ export default {
 <style>
 #app {
   text-align: center;
-}
-input {
-  margin: 2px;
 }
 </style>
