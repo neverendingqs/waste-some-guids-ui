@@ -2,14 +2,7 @@
   <div id="app" class="container">
     <h1>Waste Some GUIDs</h1>
     <div class="form-inline">
-      <input
-        type="number"
-        min="1"
-        max="99"
-        class="form-control"
-        v-model="numGuids"
-        @change="generateMoreGuids"
-      >
+      <NumGuids @change="generateMoreGuids" />
       <button
         class="btn btn-info"
         v-clipboard:copy="allGuids"
@@ -22,6 +15,7 @@
 <script>
 import uuid from 'uuid/v4';
 import Guid from './components/Guid.vue';
+import NumGuids from './components/NumGuids.vue';
 
 function generateGuids(numGuids = 10) {
   return [...Array(numGuids)].map(() => uuid())
@@ -30,7 +24,8 @@ function generateGuids(numGuids = 10) {
 export default {
   name: 'app',
   components: {
-    Guid
+    Guid,
+    NumGuids
   },
   data: function() {
     return {
@@ -44,9 +39,9 @@ export default {
     }
   },
   methods: {
-    generateMoreGuids() {
-      const numGuids = Math.max(1, Math.min(99, this.numGuids));
-      this.guids = generateGuids(numGuids);
+    generateMoreGuids(numGuids) {
+      const numGuidsBounded = Math.max(1, Math.min(999, numGuids));
+      this.guids = generateGuids(numGuidsBounded);
     }
   }
 };
