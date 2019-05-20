@@ -1,5 +1,5 @@
 <template>
-  <div class="form-inline">
+  <div class="form-inline justify-content-center">
     <input
       type="text"
       readonly=""
@@ -25,6 +25,6 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 input {
-  width: 300px !important;  /* TODO: fix */
+  width: 350px !important;  /* TODO: fix */
 }
 </style>

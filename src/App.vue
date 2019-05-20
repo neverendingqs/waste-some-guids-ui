@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container">
     <h1>Waste Some GUIDs</h1>
-    <div class="form-inline">
+    <div class="form-inline justify-content-center">
       <NumGuids @change="generateMoreGuids" />
       <button
         class="btn btn-info"
