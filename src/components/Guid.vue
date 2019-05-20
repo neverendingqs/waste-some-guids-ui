@@ -24,8 +24,7 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  input {
-    margin: 2px;
-    width: 300px !important;  /* TODO: fix */
-  }
+input {
+  width: 300px !important;  /* TODO: fix */
+}
 </style>
