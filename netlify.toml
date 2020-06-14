@@ -2,3 +2,9 @@
   base    = "."
   publish = "dist"
   command = "npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "https://tools.neverendingqs.com/wsg"
+  status = 302
+  force = true
